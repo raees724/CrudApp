@@ -1,0 +1,26 @@
+.crud-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    perspective: 800px; /* Add perspective for 3D effect */
+  }
+  
+  .rotating-text {
+    font-size: 250px;
+    color: rgb(0, 0, 0);
+    animation: rotate 6s linear infinite; /* Increase the animation duration */
+    transform-style: preserve-3d; /* Enable 3D transformation */
+  }
+
+  
+  @keyframes rotate {
+    0% {
+      transform: rotateY(0deg); /* Rotate around the Y-axis */
+    }
+    100% {
+      transform: rotateY(360deg); /* Rotate around the Y-axis */
+    }
+  }
+  
